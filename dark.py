@@ -101,34 +101,6 @@ listgrup = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
 
-##### LICENSE #####
-#=================#
-def lisensi():
-	os.system("xdg-open https://chat.whatsapp.com/EtcAqEdVh5ZALIPD3Yu6tB")
-	os.system('reset')
-	print "Ini program ilegal,\nCeue tepod jangan pake program ini,\nntar tervully nangid :(\n"
-	username = raw_input("[*] Username : ")
-	passw = raw_input("[*] Password : ")
-	r = requests.get("https://reddemons.000webhostapp.com/manusia1.7/password.txt").text
-	if passw =="":
-		print"\033[1;91m[!] Wrong"
-		keluar()
-	elif len(passw) < 10:
-		print "\033[1;91m[!] Wrong"
-		keluar()
-	elif passw in r:
-		print '\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mSuccessfully'
-		time.sleep(1)
-		try:
-			toket = open('login.txt','r')
-			menu()
-		except (KeyError,IOError):
-			masuk()
-	else:
-		print "\033[1;91m[!] Wrong"
-		time.sleep(1)
-		keluar()
-
 ##### Pilih Login #####
 def masuk():
 	os.system('reset')
@@ -2566,4 +2538,4 @@ if __name__=='__main__':
 		print"\033[1;91m[!] Locked kontol loe semua"
 		keluar()
 	elif "buka" in r:
-		lisensi()
+		login()
