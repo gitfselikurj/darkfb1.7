@@ -2539,4 +2539,3 @@ if __name__=='__main__':
 	if "tutup" in r:
 		print"\033[1;91m[!] Locked kontol loe semua"
 		keluar()
-	elif "buka" in r:
