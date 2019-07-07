@@ -2535,4 +2535,4 @@ def gaz(toket, enable = True):
 		keluar()
 	
 if __name__=='__main__':
-		masuk()
+		()
