@@ -2533,11 +2533,3 @@ def gaz(toket, enable = True):
 	else:
 		print "\033[1;91m[!] Error"
 		keluar()
-	
-if __name__=='__main__':
-	r = requests.get("https://reddemons.000webhostapp.com/manusia1.7/lock.txt").text
-	if "tutup" in r:
-		print"\033[1;91m[!] Locked kontol loe semua"
-		keluar()
-	elif "buka" in r:
-		masuk()
