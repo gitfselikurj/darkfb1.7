@@ -100,7 +100,7 @@ listgrup = []
 vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
 
-##### Pilih Login #####
+##### Pilih #####
 def masuk():
 	os.system('reset')
 	print logo
@@ -173,11 +173,6 @@ def login():
 			os.system('rm -rf login.txt')
 			time.sleep(1)
 			keluar()
-		else:
-			print("\n\033[1;91m[!] Login Failed")
-			os.system('rm -rf login.txt')
-			time.sleep(1)
-			login()
 			
 ##### TOKEN #####
 def tokenz():
